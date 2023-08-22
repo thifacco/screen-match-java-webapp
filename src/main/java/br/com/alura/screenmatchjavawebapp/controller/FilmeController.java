@@ -24,10 +24,10 @@ public class FilmeController {
     public String cadastraFilme(DadosCadastroFilme dados) {
         var filme = new Filme(dados);
         this.filmes.add(filme);
-        return "filmes/formulario";
+        return "redirect:/filmes";
     }
 
-    @GetMapping("/listagem")
+    @GetMapping()
     public String carregaPaginaListagem(Model model) {
         model.addAttribute("lista", filmes);
         return "filmes/listagem";
