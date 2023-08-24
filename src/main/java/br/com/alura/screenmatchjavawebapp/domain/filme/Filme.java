@@ -67,4 +67,11 @@ public class Filme {
     public void setGenero(String genero) {
         this.genero = genero;
     }
+
+    public void atualizaDados(DadosAlteracaoFilme dados) {
+        this.nome = dados.nome();
+        this.duracaoEmMinutos = dados.duracao();
+        this.anoLancamento = dados.ano();
+        this.genero = dados.genero();
+    }
 }
