@@ -20,9 +20,7 @@ public class Filme {
         this.genero = dados.genero();
     }
 
-    public Filme() {
-
-    }
+    public Filme() { }
 
     @Override
     public String toString() {
